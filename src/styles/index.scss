@@ -1,11 +1,11 @@
-#trafficTop {
+.trafficTop {
 background-color: black;
 width: 10px;
 height: 70px;
 margin-left: 82px;
 }
 
-#container {
+.container {
     background-color: black;
     width: 56px;
     height: 178px;
@@ -19,7 +19,7 @@ margin-left: 82px;
     margin: auto;
     border-radius: 50%;
     padding: 4px;
-    &.firstColor{ background-color: blue;}
+    &.firstColor{ background-color: grey;}
     &.red{background-color: red;}
     &.yellow{background-color: yellow;}
     &.green{background-color: green;}
