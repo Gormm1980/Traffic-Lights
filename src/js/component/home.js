@@ -1,14 +1,26 @@
 import React from "react";
-import Red from "./component/Red.js";
 
 function Home() {
+	const [active, setActive] = React.useState("light inactive");
+	function changeRed() {
+		setActive("light red");
+	}
+	const [active1, setActive1] = React.useState("light inactive");
+	function changeYellow() {
+		setActive1("light yellow");
+	}
+	const [active2, setActive2] = React.useState("light inactive");
+	function changeGreen() {
+		setActive2("light green");
+	}
+
 	return (
 		<div>
 			<div className="trafficTop"></div>
 			<div className="container">
-				<div className="light firstColor">{Red}</div>
-				<div className="light firstColor"></div>
-				<div className="light firstColor"></div>
+				<button className={active} onClick={changeRed}></button>
+				<button className={active1} onClick={changeYellow}></button>
+				<button className={active2} onClick={changeGreen}></button>
 			</div>
 		</div>
 	);
